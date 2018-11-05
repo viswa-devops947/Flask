@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Page</title>
+</head>
+<body>
+	<ul>
+	    {% for user in users %}
+		    <li>{{ user }}</li>
+	    {% endfor %}
+	</ul>
+	{% if 'john' in users %}
+			<p>Hello John</p>
+	{% else %}
+			<p>No John in users list</p>
+	{% endif %}
+</body>
+</html>
